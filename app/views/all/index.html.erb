@@ -1,0 +1,21 @@
+<h3> TODOS: </h3>
+<ol>
+<% @todos.each do |t|%>
+  <li>Task: <%= t.tasks %> -- Completed: <%= t.finished %> </li>
+<% end %>
+</ol>
+<%= link_to 'New Todo', newtodo_path %>
+
+<h3> Users: </h3>
+<ol>
+<% @users.each do |u|%>
+  <li>Name: <%= u.name %> -- Age: <%= u.age %>  -- Email: <%= u.email %></li>
+<% end %>
+</ol>
+
+<h3> Cat: </h3>
+<ol>
+<% @cats.each do |c|%>
+  <li>Name: <%= c.name %> </li>
+<% end %>
+</ol>
